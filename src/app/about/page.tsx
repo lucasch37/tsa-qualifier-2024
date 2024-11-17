@@ -35,7 +35,7 @@ export default function About() {
     const [hoveredId, setHoveredId] = useState<number | null>(null);
 
     return (
-        <div className="mt-20 w-full h-full">
+        <div className="py-12 w-full h-full">
             <div className="relative w-full h-full">
                 {boxes.map((box) => (
                     <motion.div
