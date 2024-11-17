@@ -1,6 +1,5 @@
 "use client";
 
-
 import { motion } from "framer-motion";
 import { ChevronsRight } from "lucide-react";
 
@@ -11,9 +10,9 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center mt-16 relative">
                 {/* Animated Title */}
                 <motion.div
-                    initial={{opacity: 0, y: -50}}
-                    animate={{opacity: 1, y: 0}}
-                    transition={{duration: 0.5}}
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
                     className="bg-clip-text text-transparent bg-gradient-to-b from-orange-400 to-orange-200 font-bebas landing-text leading-[0.9]"
                 >
                     LOBSTER
@@ -23,9 +22,9 @@ export default function Home() {
                     src="/slippers.png"
                     alt="slippers"
                     className="h-[45vh] -mt-72"
-                    initial={{y: 100, opacity: 0}}
-                    animate={{y: 0, opacity: 1}}
-                    transition={{duration: 0.5, ease: "easeOut"}}
+                    initial={{ y: 100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
                 />
             </div>
 
@@ -35,7 +34,7 @@ export default function Home() {
                 initial="hidden"
                 animate="visible"
                 variants={{
-                    hidden: {opacity: 0},
+                    hidden: { opacity: 0 },
                     visible: {
                         opacity: 1,
                         transition: {
