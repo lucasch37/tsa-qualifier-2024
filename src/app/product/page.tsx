@@ -10,7 +10,7 @@ const Product = (props: Props) => {
     return (
         <div className="flex flex-col py-12">
             <div className="grid grid-cols-5 gap-4 px-8 h-full">
-                <WobbleCard containerClassName="bg-[#FFA567]">
+                <WobbleCard containerClassName="bg-complement">
                     <div className="text-center font-bebas text-5xl p-4 flex items-center justify-center h-full">
                         OUR <br /> PRODUCTS
                     </div>
@@ -39,7 +39,7 @@ const Product = (props: Props) => {
                     price={12.99}
                     className="col-span-1"
                 />
-                <div className="col-span-2 ">
+                <div className="col-span-2">
                     <ExpandableInfo title="Features">
                         <ul className="mt-4 list-disc space-y-2">
                             <li>

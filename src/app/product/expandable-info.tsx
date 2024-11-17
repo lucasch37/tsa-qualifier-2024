@@ -69,7 +69,7 @@ export function ExpandableInfo({
                         <motion.div
                             ref={ref}
                             layoutId={`card-${title}-${id}`}
-                            className="h-fit w-[600px] bg-[#FFA567] p-16 [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.5),rgba(255,255,255,0))] rounded-2xl overflow-hidden"
+                            className="h-fit w-[600px] bg-complement p-16 [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.5),rgba(255,255,255,0))] rounded-2xl overflow-hidden"
                         >
                             <motion.div
                                 className="flex justify-between text-5xl font-bebas"
@@ -89,7 +89,7 @@ export function ExpandableInfo({
                 layoutId={`card-${title}-${id}`}
             >
                 <WobbleCard
-                    containerClassName="bg-[#FFA567] h-full"
+                    containerClassName="bg-complement h-full"
                     scale={1.07}
                 >
                     <motion.div className="text-center p-8 flex flex-col items-center justify-center h-full">

@@ -40,7 +40,7 @@ export default function About() {
                 {boxes.map((box) => (
                     <motion.div
                         key={box.id}
-                        className={`absolute ${box.className} bg-[#FFA567] [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.5),rgba(255,255,255,0))] rounded-lg shadow-md overflow-hidden`}
+                        className={`absolute ${box.className} bg-accent [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.5),rgba(255,255,255,0))] rounded-lg shadow-md overflow-hidden`}
                         style={{
                             zIndex: hoveredId === box.id ? 10 : 1
                         }}
@@ -67,8 +67,8 @@ export default function About() {
                             setHoveredId(null);
                         }}
                     >
-                        <div className=" mt-8 ml-8 pt-8 h-full relative">
-                            <motion.h2 
+                        <div className="mt-8 ml-8 pt-8 h-full relative">
+                            <motion.h2
                                 className="text-6xl font-bold absolute"
                                 initial={{
                                     left: "50%",

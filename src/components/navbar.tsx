@@ -69,7 +69,7 @@ export default function Navbar() {
                 transition={{type: "spring", stiffness: 90, delay: 0.3}}
             >
                 <motion.div
-                    className="flex flex-row gap-16 px-16 pt-3 pb-2 rounded-full bg-[#ffc299] text-2xl font-bebas"
+                    className="flex flex-row gap-16 px-16 pt-3 pb-2 rounded-full bg-complement text-2xl font-bebas"
                     whileHover={{scale: 1.1}}
                     transition={{type: "spring", stiffness: 90}}
                 >
@@ -105,7 +105,7 @@ export default function Navbar() {
                 {[SearchIcon, HeartIcon, ShoppingBagIcon].map((Icon, index) => (
                     <button
                         key={index}
-                        className="rounded-full p-3 bg-[#ffc299]"
+                        className="rounded-full p-3 bg-complement"
                     >
                         <Icon size={22}/>
                     </button>

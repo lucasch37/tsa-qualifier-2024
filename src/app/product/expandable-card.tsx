@@ -86,7 +86,7 @@ export function ExpandableCard({
                                 />
                             </motion.div>
 
-                            <div className="flex p-6 justify-between bg-[#ffc299]">
+                            <div className="flex p-6 justify-between bg-complement">
                                 <div className="flex flex-col">
                                     <motion.div className="truncate font-bebas text-4xl">
                                         {title}
@@ -96,7 +96,7 @@ export function ExpandableCard({
                                     </motion.div>
                                 </div>
                                 <div>
-                                    <div className="font-bebas flex gap-2 items-center text-2xl px-2 bg-[#FFA567] rounded-lg">
+                                    <div className="font-bebas flex gap-2 items-center text-2xl px-2 bg-accent rounded-lg">
                                         Buy now <ChevronsRight />
                                     </div>
                                 </div>

@@ -58,12 +58,12 @@ export default function Home() {
                         data-cursor-exclusion
                     >
                         <div
-                            className="py-3 px-8 rounded-full bg-[#FFA567] w-fit text-3xl"
+                            className="py-3 px-8 rounded-full bg-orange-400 w-fit text-3xl"
                         >
                             PURCHASE NOW
                         </div>
-                        <div className="h-4 bg-[#FFA567] w-4 -mx-[2px]"></div>
-                        <div className="p-1.5 rounded-full bg-[#FFA567] w-fit text-xl">
+                        <div className="h-4 bg-orange-400 w-4 -mx-[2px]"></div>
+                        <div className="p-1.5 rounded-full bg-orange-400 w-fit text-xl">
                             <div className="rounded-full p-1">
                                 <ChevronsRight size={40}/>
                             </div>
@@ -72,9 +72,8 @@ export default function Home() {
                 </motion.div>
 
                 <div className="flex gap-4 items-end">
-                    {/* Card 1 */}
                     <motion.div
-                        className="p-3 flex gap-4 items-center bg-[#ffc299] rounded-xl h-fit"
+                        className="p-3 flex gap-4 items-center bg-complement rounded-xl h-fit"
                         variants={{
                             hidden: {x: 100, opacity: 0},
                             visible: {x: 0, opacity: 1},
@@ -87,7 +86,7 @@ export default function Home() {
                         />
                         <div
                             data-cursor-exclusion
-                            className="font-bebas text-2xl h-28 px-3 leading-tight bg-[#FFA567]/80 rounded-xl text-center flex items-center "
+                            className="font-bebas text-2xl h-28 px-3 leading-tight bg-accent/80 rounded-xl text-center flex items-center "
                         >
                             COMFORT AND
                             <br/>
@@ -95,7 +94,7 @@ export default function Home() {
                         </div>
                     </motion.div>
                     <motion.div
-                        className="p-3 flex flex-col gap-2 items-center bg-[#ffc299] text-orange-400 rounded-xl font-bold text-2xl relative"
+                        className="p-3 flex flex-col gap-2 items-center bg-complement text-background rounded-xl font-bold text-2xl relative"
                         variants={{
                             hidden: {x: 100, opacity: 0, rotate: -10},
                             visible: {x: 0, opacity: 1, rotate: 0},
@@ -115,7 +114,7 @@ export default function Home() {
                         </div>
                     </motion.div>
                     <motion.div
-                        className="p-3 flex gap-4 items-center bg-[#ffc299] rounded-xl h-fit"
+                        className="p-3 flex gap-4 items-center bg-complement rounded-xl h-fit"
                         variants={{
                             hidden: {x: 100, opacity: 0},
                             visible: {x: 0, opacity: 1},

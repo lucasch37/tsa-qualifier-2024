@@ -11,22 +11,22 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en">
-            <body className="relative bg-[#ffd1b3] p-8 h-screen overflow-hidden container mx-auto ">
+            <body className="relative bg-background p-8 h-screen overflow-hidden container mx-auto ">
                 <Cursor isGelly={true} cursorBackgrounColor="rgb(249 115 22)" />
                 <Circle
-                    className="absolute -top-60 right-12 -z-10 fill-none text-[#ffdac2] stroke-[3px]"
+                    className="absolute -top-60 right-12 -z-10 fill-none text-lightShape stroke-[3px]"
                     size={384}
                 />
                 <Triangle
-                    className="absolute top-12 left-12 -z-10 fill-none text-[#ffdac2] stroke-[3px]"
+                    className="absolute top-12 left-12 -z-10 fill-none text-lightShape stroke-[3px]"
                     size={384}
                 />
                 <Square
-                    className="absolute top-96 -right-12 -z-10 fill-none text-[#ffdac2] stroke-[3px]"
+                    className="absolute top-96 -right-12 -z-10 fill-none text-lightShape stroke-[3px]"
                     size={384}
                 />
                 <Circle
-                    className="absolute -bottom-60 left-12 -z-10 fill-none text-[#ffdac2] stroke-[3px]"
+                    className="absolute -bottom-60 left-12 -z-10 fill-none text-lightShape stroke-[3px]"
                     size={384}
                 />
                 <Navbar />
