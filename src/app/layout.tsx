@@ -3,15 +3,15 @@
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { Circle, Square, Triangle } from "lucide-react";
-import { Cursor } from "react-creative-cursor";
-import "react-creative-cursor/dist/styles.css";
+import { Cursor } from "@/lib/react-creative-cursor";
+import "@/lib/react-creative-cursor/dist/styles.css";
 
 export default function RootLayout({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en">
-            <body className="relative bg-[#ffd1b3] p-8 h-screen overflow-hidden container mx-auto">
+            <body className="relative bg-[#ffd1b3] p-8 h-screen overflow-hidden container mx-auto ">
                 <Cursor isGelly={true} cursorBackgrounColor="rgb(249 115 22)" />
                 <Circle
                     className="absolute -top-60 right-12 -z-10 fill-none text-[#ffdac2] stroke-[3px]"

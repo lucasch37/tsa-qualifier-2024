@@ -28,12 +28,6 @@ export function ExpandableInfo({
             }
         }
 
-        if (isActive) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "auto";
-        }
-
         window.addEventListener("keydown", onKeyDown);
         return () => window.removeEventListener("keydown", onKeyDown);
     }, [isActive]);
