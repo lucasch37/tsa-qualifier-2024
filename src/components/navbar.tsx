@@ -6,8 +6,27 @@ import Image from "next/image";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 
+const navItems = [
+    {
+        item: "Home",
+        path: "/"
+    },
+    {
+        item: "Product",
+        path: "/product"
+    },
+    {
+        item: "About",
+        path: "/about"
+    },
+    {
+        item: "FAQ",
+        path: "/faq"
+    },
+];
+
 export default function Navbar() {
-    const pathname = usePathname();
+    const curPath = usePathname();
 
     return (
         <motion.div
@@ -17,9 +36,9 @@ export default function Navbar() {
             animate={{y: 0}}
             transition={{type: "spring", stiffness: 80}}
         >
-            {/* Logo Section */}
-            <motion.div
+            <motion.a
                 className="flex flex-1 font-bebas items-center gap-3"
+                href="/"
                 initial={{x: -100}}
                 animate={{x: 0}}
                 transition={{type: "spring", stiffness: 80, delay: 0.1}}
@@ -42,22 +61,31 @@ export default function Navbar() {
                 >
                     RHS SLIPPERS
                 </motion.div>
-            </motion.div>
+            </motion.a>
 
-            {/* Links Section */}
             <motion.div
-                className="flex flex-row gap-16 px-16 pt-3 pb-2 rounded-full bg-[#ffc299] text-2xl font-bebas"
                 initial={{scale: 0}}
                 animate={{scale: 1}}
                 transition={{type: "spring", stiffness: 90, delay: 0.3}}
             >
-                <Link href="/" className="nav-link-selected">Home</Link>
-                <Link href="/product" className="nav-link">Product</Link>
-                <Link href="/about" className="nav-link">About</Link>
-                <Link href="/" className="nav-link">FAQ</Link>
+                <motion.div
+                    className="flex flex-row gap-16 px-16 pt-3 pb-2 rounded-full bg-[#ffc299] text-2xl font-bebas"
+                    whileHover={{scale: 1.1}}
+                    transition={{type: "spring", stiffness: 90}}
+                >
+                    {
+                        navItems.map(({item, path}, i) =>
+                            <Link href={path}
+                                  className={path == curPath ? "nav-link-selected" : "nav-link"}
+                                  key={i}
+                            >
+                                {item}
+                            </Link>
+                        )
+                    }
+                </motion.div>
             </motion.div>
 
-            {/* Icons Section */}
             <motion.div
                 className="flex flex-1 flex-row justify-end gap-2"
                 initial="hidden"
@@ -75,18 +103,12 @@ export default function Navbar() {
                 }}
             >
                 {[SearchIcon, HeartIcon, ShoppingBagIcon].map((Icon, index) => (
-                    <motion.div
+                    <button
                         key={index}
-                        whileHover={{scale: 1.3, rotate: -15}}
-                        whileTap={{scale: 1}}
                         className="rounded-full p-3 bg-[#ffc299]"
-                        variants={{
-                            hidden: {opacity: 0, scale: 0},
-                            visible: {opacity: 1, scale: 1},
-                        }}
                     >
                         <Icon size={22}/>
-                    </motion.div>
+                    </button>
                 ))}
             </motion.div>
         </motion.div>
