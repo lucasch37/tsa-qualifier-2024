@@ -16,6 +16,7 @@ export default function RootLayout({
                 <body className="relative bg-background p-8 h-screen overflow-hidden container mx-auto ">
                     <Cursor
                         isGelly={true}
+                        animationDuration={1}
                         cursorBackgrounColor="rgb(249 115 22)"
                     />
                     <Circle

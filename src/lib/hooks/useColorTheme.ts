@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-// Define your color themes
 const colorThemes = [
     {
         background: "#FAF4EE",
@@ -8,7 +7,7 @@ const colorThemes = [
         accent: "#FF8A47",
         complement: "#FA625C",
         textGradientStart: "#FBB03B",
-        textGradientEnd: "#f7196a",
+        textGradientEnd: "#f7196a"
     },
     {
         background: "#00cdcd",
@@ -16,7 +15,7 @@ const colorThemes = [
         accent: "#009a9a",
         complement: "#00b4b4",
         textGradientStart: "#FBB03B",
-        textGradientEnd: "#f7196a",
+        textGradientEnd: "#f7196a"
     },
     {
         background: "#ffd1b3",
@@ -24,8 +23,16 @@ const colorThemes = [
         accent: "#FFA567",
         complement: "#ffc299",
         textGradientStart: "#FBB03B",
-        textGradientEnd: "#f7196a",
+        textGradientEnd: "#f7196a"
     },
+    {
+        background: "#FFF0F7",
+        lightShape: "#FF9ECD",
+        accent: "#FF3399",
+        complement: "#FF66B2",
+        textGradientStart: "#FBB03B",
+        textGradientEnd: "#f7196a"
+    }
 ];
 
 export const useColorTheme = () => {
@@ -36,7 +43,7 @@ export const useColorTheme = () => {
             setCurrentThemeIndex(
                 (prevIndex) => (prevIndex + 1) % colorThemes.length
             );
-        }, 10000);
+        }, 3500);
 
         return () => clearInterval(interval);
     }, []);
