@@ -29,3 +29,4 @@ If the landing page doesnt look correct at first, reload the page and it should 
  - All the source code for the website can be found in this repo, and is primarily in src/.
  - As evidence that nothing on this repository was changed after 10 p.m. the commit log can be checked [here](https://github.com/lucasch37/tsa-qualifier-2024/commits/main/).
  - The source code can be downloaded as a zip [here](https://github.com/lucasch37/tsa-qualifier-2024/archive/refs/heads/main.zip)
+ - Due to the time constraints, the website is created for desktop, 1080p or greater
