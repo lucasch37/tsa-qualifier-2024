@@ -3,12 +3,13 @@ import Image from "next/image";
 import React from "react";
 import { ExpandableCard } from "./expandable-card";
 import { ExpandableInfo } from "./expandable-info";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 const Product = (props: Props) => {
     return (
-        <div className="flex flex-col py-12">
+        <div className="flex flex-col py-16">
             <div className="grid grid-cols-5 gap-4 px-[4vw] h-full">
                 <WobbleCard containerClassName="bg-complement">
                     <div className="text-center font-bebas text-5xl p-4 flex items-center justify-center h-full">
@@ -17,7 +18,7 @@ const Product = (props: Props) => {
                 </WobbleCard>
                 <ExpandableCard
                     src="/lobster-beach.jpg"
-                    title="Orange Lobster Slippers"
+                    title="Red Lobster Slippers"
                     price={12.99}
                     productLink="https://a.co/d/7GDyCZU"
                     className="col-span-2 row-span-2"

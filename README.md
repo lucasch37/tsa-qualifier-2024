@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RHS Slippers
 
-## Getting Started
+The premier place to get your lobster slippers.
 
-First, run the development server:
+## Accessing the website
+
+Here are your options to view the website in order of most ideal to okay.
+
+### Option 1: Vercel (Recommended)
+
+You can view the website at [rhs-slippers.vercel.app](rhs-slippers.vercel.app).
+
+### Option 2: Development Build
+
+With `npm` installed, run:
 
 ```bash
+cd tsa-qualifier-2024/devBuild
+npm i --legacy-peer-deps
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then you can access the website at `http://localhost:3000`. The pages will initially build as you navigate them, so it might be a bit slow.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The dev build is also where you can find the source code for our website.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Option 2: Static Build (Not Recommended)
 
-## Learn More
+If you have `python` installed, then you can:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+cd tsa-qualifier-2024/staticBuild
+python -m http.server
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Then you can access the website at `http://localhost:8000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This is not recommended because some pictures will not load due to a quirk with `next/image`.

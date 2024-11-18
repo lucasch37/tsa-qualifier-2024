@@ -89,7 +89,7 @@ export function ExpandableInfo({
                 layoutId={`card-${title}-${id}`}
             >
                 <WobbleCard
-                    containerClassName="bg-complement h-full"
+                    containerClassName="bg-complement h-full transition-all"
                     scale={1.07}
                 >
                     <motion.div className="text-center p-8 flex flex-col items-center justify-center h-full">

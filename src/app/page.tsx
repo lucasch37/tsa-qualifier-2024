@@ -58,11 +58,11 @@ export default function Home() {
                         className="flex items-center"
                         data-cursor-exclusion
                     >
-                        <div className="py-3 px-8 rounded-full bg-orange-400 w-fit text-3xl">
+                        <div className="py-3 px-8 rounded-full bg-complement w-fit text-3xl">
                             PURCHASE NOW
                         </div>
-                        <div className="h-4 bg-orange-400 w-4 -mx-[2px]"></div>
-                        <div className="p-1.5 rounded-full bg-orange-400 w-fit text-xl">
+                        <div className="h-4 bg-complement w-4 -mx-[2px]"></div>
+                        <div className="p-1.5 rounded-full bg-complement w-fit text-xl">
                             <div className="rounded-full p-1">
                                 <ChevronsRight size={40} />
                             </div>
