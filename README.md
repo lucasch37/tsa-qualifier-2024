@@ -2,37 +2,28 @@
 
 The premier place to get your lobster slippers.
 
-## Accessing the website
+## Accessing the Website
 
 Here are your options to view the website in order of most ideal to okay.
 
 ### Option 1: Vercel (Recommended)
 
-You can view the website at [rhs-slippers.vercel.app](rhs-slippers.vercel.app).
+You can view the website at [https://rhs-slippers.vercel.app](https://rhs-slippers.vercel.app).
 
 ### Option 2: Development Build
 
-With `npm` installed, run:
+Install the newest version of node js found [here](https://nodejs.org/en/download/package-manager).
+
+With `npm` (built into node) installed, run:
 
 ```bash
-cd tsa-qualifier-2024/devBuild
 npm i --legacy-peer-deps
 npm run dev
 ```
 
 Then you can access the website at `http://localhost:3000`. The pages will initially build as you navigate them, so it might be a bit slow.
+If the landing page doesnt look correct at first, reload the page and it should show up (this means that the page was still building).
 
-The dev build is also where you can find the source code for our website.
 
-### Option 2: Static Build (Not Recommended)
-
-If you have `python` installed, then you can:
-
-```bash
-cd tsa-qualifier-2024/staticBuild
-python -m http.server
-```
-
-Then you can access the website at `http://localhost:8000`.
-
-This is not recommended because some pictures will not load due to a quirk with `next/image`.
+## Source Code
+All the source code for the website can be found in this repo, and is primarily in src/.
