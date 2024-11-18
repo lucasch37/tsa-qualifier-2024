@@ -19,24 +19,28 @@ const Product = (props: Props) => {
                     src="/lobster-beach.jpg"
                     title="Orange Lobster Slippers"
                     price={12.99}
+                    productLink="https://a.co/d/7GDyCZU"
                     className="col-span-2 row-span-2"
                 />
                 <ExpandableCard
                     src="/shark-water.jpg"
                     title="Blue Shark Slippers"
                     price={12.99}
+                    productLink="https://a.co/d/5x69D6j"
                     className="col-span-1"
                 />
                 <ExpandableCard
                     src="/black-fish.jpg"
                     title="Black Fish Slippers"
                     price={12.99}
+                    productLink="https://a.co/d/bqgZhLh"
                     className="col-span-1"
                 />
                 <ExpandableCard
                     src="/black-shark.jpg"
                     title="Black Shark Slippers"
                     price={12.99}
+                    productLink="https://a.co/d/39iphIx"
                     className="col-span-1"
                 />
                 <div className="col-span-2">
@@ -78,18 +82,21 @@ const Product = (props: Props) => {
                     src="/blue-fish.jpg"
                     title="Blue Fish Slippers"
                     price={12.99}
+                    productLink="https://a.co/d/6wPhSYN"
                     className="col-span-1"
                 />
                 <ExpandableCard
                     src="/lobster-pan.jpg"
                     title="Green Lobster Slippers"
                     price={12.99}
+                    productLink="https://a.co/d/6wPhSYN"
                     className="col-span-1"
                 />
                 <ExpandableCard
                     src="/orange-fish.jpg"
                     title="Orange Fish"
                     price={12.99}
+                    productLink="https://a.co/d/ePSFfcf"
                     className="col-span-1"
                 />
             </div>

@@ -21,7 +21,7 @@ const boxes = [
         id: 3,
         title: "Inspiration",
         content:
-            "We looked around Redmond High School and saw that students footwear was lacking in creativity. We wanted to change that and spice things up, bringing a sense of fun and whimsy to school. What better way to do that than with lobster slippers? These slippers turn heads in the hallways and make people smile. We wanted to bring that joy to everyone, and that's why we created the lobster slippers",
+            "We looked around Redmond High School and saw that students footwear was lacking in creativity. We wanted to change that and spice things up, bringing a sense of fun and whimsy to school. What better way to do that than with lobster slippers? These slippers turn heads in the hallways and make people smile. We wanted to bring that joy to everyone, and that's why we created the lobster slippers. After that, we expanded our product line to include fish slippers, shark slippers, and more!",
         className: "bottom-0 left-0",
     },
     {

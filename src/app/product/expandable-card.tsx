@@ -4,20 +4,23 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/lib/hooks/useOutsideClick";
 import { ChevronsRight } from "lucide-react";
+import Link from "next/link";
 
 interface ExpandableCardProps {
     src: string;
     title?: string;
     price: number;
+    productLink: string;
     className?: string;
 }
 
 export function ExpandableCard({
-                                   src,
-                                   title,
-                                   price,
-                                   className,
-                               }: ExpandableCardProps) {
+    src,
+    title,
+    price,
+    productLink,
+    className,
+}: ExpandableCardProps) {
     const [isActive, setIsActive] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
     const id = useId();
@@ -95,11 +98,17 @@ export function ExpandableCard({
                                         ${price}
                                     </motion.div>
                                 </div>
-                                <div>
+                                <Link
+                                    href={productLink}
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    className="flex items-center"
+                                    data-cursor-exclusion
+                                >
                                     <div className="font-bebas flex gap-2 items-center text-2xl px-2 bg-accent rounded-lg">
                                         Buy now <ChevronsRight />
                                     </div>
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     </motion.div>
