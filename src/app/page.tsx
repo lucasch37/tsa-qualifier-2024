@@ -12,14 +12,14 @@ export default function Home() {
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="bg-clip-text text-transparent bg-gradient-to-b from-orange-400 to-orange-200 font-bebas landing-text leading-[0.9]"
+                    className="bg-clip-text drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-transparent bg-gradient-to-b from-textGradientStart to-textGradientEnd font-bebas landing-text leading-[0.9]"
                 >
                     LOBSTER
                 </motion.div>
                 <motion.img
                     src="/slippers.png"
                     alt="slippers"
-                    className="h-[50vh] -mt-64"
+                    className="h-[50vh] z-10 -mt-64"
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
@@ -120,7 +120,7 @@ export default function Home() {
                         }}
                     >
                         <img
-                            src="/lobster-pan.jpg"
+                            src="/lobster-pan.png"
                             alt=""
                             className="w-64 rounded-xl"
                         />

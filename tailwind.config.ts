@@ -12,7 +12,7 @@ export default {
     		bebas: ['"Bebas Neue"', "sans-serif"]
     	},
     	container: {
-    		center: 'true',
+    		center: true,
     		padding: '2rem',
     		screens: {
     			'2xl': '1400px'
@@ -20,12 +20,14 @@ export default {
     	},
     	extend: {
     		colors: {
-    			background: "#00cdcd",
-                lightShape: "#00e7e7",
-                accent: "#009a9a",
-                complement: "#00b4b4"
-    		},
-    		keyframes: {
+				"background": "#FAF4EE",
+				"lightShape": "#70b5ad",
+				"accent": "#FF8A47",
+				"complement": "#FA625C",
+				"textGradientStart": "#FBB03B",
+				"textGradientEnd": "#f7196a"
+			},
+			keyframes: {
     			'accordion-down': {
     				from: {
     					height: '0'
