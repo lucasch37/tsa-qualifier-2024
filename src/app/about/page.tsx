@@ -14,7 +14,8 @@ const boxes = [
     {
         id: 2,
         title: "Creators",
-        content: "We are a group of 5 students from Redmond High School who created this product page. We are passionate about bringing joy and fun to our school and community. We hope you enjoy our website and our product, the lobster slippers!",
+        content:
+            "We are a group of 5 students from Redmond High School who created this product page. We are passionate about bringing joy and fun to our school and community. We hope you enjoy our website and our product, the lobster slippers!",
         className: "top-0 right-0",
     },
     {
@@ -43,7 +44,7 @@ export default function About() {
                 {boxes.map((box) => (
                     <motion.div
                         key={box.id}
-                        className={`absolute ${box.className} bg-accent [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.5),rgba(255,255,255,0))] rounded-lg shadow-md overflow-hidden`}
+                        className={`absolute ${box.className} bg-accent [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.5),rgba(255,255,255,0))] rounded-2xl shadow-md overflow-hidden`}
                         style={{
                             zIndex: hoveredId === box.id ? 10 : 1,
                         }}

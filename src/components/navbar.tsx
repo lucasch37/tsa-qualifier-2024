@@ -1,27 +1,27 @@
 "use client";
 
-import {motion} from "framer-motion";
-import {HeartIcon, SearchIcon, ShoppingBagIcon} from "lucide-react";
+import { motion } from "framer-motion";
+import { HeartIcon, SearchIcon, ShoppingBagIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import {usePathname} from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const navItems = [
     {
         item: "Home",
-        path: "/"
+        path: "/",
     },
     {
         item: "Product",
-        path: "/product"
+        path: "/product",
     },
     {
         item: "About",
-        path: "/about"
+        path: "/about",
     },
     {
         item: "FAQ",
-        path: "/faq"
+        path: "/faq",
     },
 ];
 
@@ -32,26 +32,21 @@ export default function Navbar() {
         <motion.div
             className="flex flex-row items-center text-black"
             data-cursor-exclusion
-            initial={{y: -100}}
-            animate={{y: 0}}
-            transition={{type: "spring", stiffness: 80}}
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ type: "spring", stiffness: 80 }}
         >
             <motion.a
                 className="flex flex-1 font-bebas items-center gap-3"
                 href="/"
-                initial={{x: -100}}
-                animate={{x: 0}}
-                transition={{type: "spring", stiffness: 80, delay: 0.1}}
+                initial={{ x: -100 }}
+                animate={{ x: 0 }}
+                transition={{ type: "spring", stiffness: 80, delay: 0.1 }}
             >
-                <Image
-                    src="/rhs-logo.svg"
-                    width={80}
-                    height={80}
-                    alt="logo"
-                />
+                <Image src="/rhs-logo.svg" width={80} height={80} alt="logo" />
                 <motion.div
-                    initial={{scale: 0.8}}
-                    animate={{scale: 1}}
+                    initial={{ scale: 0.8 }}
+                    animate={{ scale: 1 }}
                     transition={{
                         type: "spring",
                         stiffness: 120,
@@ -64,25 +59,28 @@ export default function Navbar() {
             </motion.a>
 
             <motion.div
-                initial={{scale: 0}}
-                animate={{scale: 1}}
-                transition={{type: "spring", stiffness: 90, delay: 0.3}}
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ type: "spring", stiffness: 90, delay: 0.3 }}
             >
                 <motion.div
                     className="flex flex-row gap-16 px-16 pt-3 pb-2 rounded-full bg-complement text-2xl font-bebas"
-                    whileHover={{scale: 1.1}}
-                    transition={{type: "spring", stiffness: 90}}
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 90 }}
                 >
-                    {
-                        navItems.map(({item, path}, i) =>
-                            <Link href={path}
-                                  className={path == curPath ? "nav-link-selected" : "nav-link"}
-                                  key={i}
-                            >
-                                {item}
-                            </Link>
-                        )
-                    }
+                    {navItems.map(({ item, path }, i) => (
+                        <Link
+                            href={path}
+                            className={
+                                path == curPath
+                                    ? "nav-link-selected"
+                                    : "nav-link"
+                            }
+                            key={i}
+                        >
+                            {item}
+                        </Link>
+                    ))}
                 </motion.div>
             </motion.div>
 
@@ -91,7 +89,7 @@ export default function Navbar() {
                 initial="hidden"
                 animate="visible"
                 variants={{
-                    hidden: {opacity: 0, scale: 0},
+                    hidden: { opacity: 0, scale: 0 },
                     visible: {
                         opacity: 1,
                         scale: 1,
@@ -107,7 +105,7 @@ export default function Navbar() {
                         key={index}
                         className="rounded-full p-3 bg-complement"
                     >
-                        <Icon size={22}/>
+                        <Icon size={22} />
                     </button>
                 ))}
             </motion.div>

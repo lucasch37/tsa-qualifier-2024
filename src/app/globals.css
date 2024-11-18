@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -34,4 +34,18 @@
 
 .nav-link:hover:after {
     transform: scaleX(1);
+}
+
+:root {
+    --color-background: #faf4ee;
+    --color-lightShape: #70b5ad;
+    --color-accent: #ff8a47;
+    --color-complement: #fa625c;
+    --color-textGradientStart: #fbb03b;
+    --color-textGradientEnd: #f7196a;
+}
+
+* {
+    transition: background-color 0.5s ease, border-color 0.5s ease,
+        color 0.5s ease, fill 0.5s ease, stroke 0.5s ease;
 }

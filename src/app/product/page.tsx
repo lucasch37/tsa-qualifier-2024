@@ -9,7 +9,7 @@ type Props = {};
 const Product = (props: Props) => {
     return (
         <div className="flex flex-col py-12">
-            <div className="grid grid-cols-5 gap-4 px-8 h-full">
+            <div className="grid grid-cols-5 gap-4 px-[4vw] h-full">
                 <WobbleCard containerClassName="bg-complement">
                     <div className="text-center font-bebas text-5xl p-4 flex items-center justify-center h-full">
                         OUR <br /> PRODUCTS
