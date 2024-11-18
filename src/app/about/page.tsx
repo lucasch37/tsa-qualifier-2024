@@ -38,7 +38,7 @@ export default function About() {
     const [hoveredId, setHoveredId] = useState<number | null>(null);
 
     return (
-        <div className="py-12 w-full h-full">
+        <div className="p-24 w-full h-full">
             <div className="relative w-full h-full">
                 {boxes.map((box) => (
                     <motion.div
@@ -78,7 +78,7 @@ export default function About() {
                     >
                         <div className="mt-8 ml-8 pt-8 h-full relative">
                             <motion.h2
-                                className="text-6xl font-bold absolute"
+                                className="text-7xl absolute font-bebas"
                                 initial={{
                                     left: "50%",
                                     top: "50%",
@@ -106,7 +106,7 @@ export default function About() {
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.2 }}
-                                    className="text-zinc-800 mt-12"
+                                    className="text-zinc-800 mt-12 pr-6"
                                 >
                                     {box.content}
                                 </motion.div>

@@ -102,7 +102,7 @@ export function ExpandableCard({
                                     href={productLink}
                                     rel="noopener noreferrer"
                                     target="_blank"
-                                    className="flex items-center"
+                                    className="flex items-center active:scale-95 transition ease-in-out duration-300"
                                     data-cursor-exclusion
                                 >
                                     <div className="font-bebas flex gap-2 items-center text-2xl px-2 bg-accent rounded-lg">
